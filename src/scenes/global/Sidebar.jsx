@@ -54,7 +54,8 @@ const Sidebar = () => {
           padding: "5px 35px 5px 20px !important",
         },
         "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
+          // color: "#9C27B0 !important",
+          background: "linear-gradient(142.18deg,#d22079 -.01%,#531333 68.01%)"
         },
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
@@ -79,9 +80,13 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
-                </Typography>
+                <img
+                  alt="logo"
+                  width="150rem"
+                  height="45rem"
+                  src={`../../assets/fan4all-logo.png`}
+                  style={{ cursor: "pointer" }}
+                />
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
                 </IconButton>
@@ -107,10 +112,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Issis Salma
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  FAN4ALL moderator
                 </Typography>
               </Box>
             </Box>
